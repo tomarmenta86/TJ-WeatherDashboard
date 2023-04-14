@@ -17,9 +17,9 @@
     <div class="columns">
         <div class="column is-2">
             <div class="field is-grouped-left">
-                <label id="cityInput" class="label is-large">Search for a City:</label>
+                <label class="label is-large">Search for a City:</label>
                 <div class="control">
-                <input class="input is-medium" type="text" placeholder="Arizona"></div>
+                <input id="cityInput" class="input is-medium" type="text" placeholder="Prescott"></div>
                 <p class="control">
                     <a id= "searches" class="button is-info m-1">
                     Search
@@ -31,18 +31,18 @@
 <!--Recents Search List-->
 <div class="columns">
     <ul class= "column is-2 mr-2" id="cityList">
-        <li id=search1 class="button is-primary m-1">city1</li>
-        <li id=search2 class="button is-primary m-1">city2</li>
-        <li id=search3 class="button is-primary m-1">city3</li>
-        <li id=search4 class="button is-primary m-1">city4</li>
-        <li id=search5 class="button is-primary m-1">city5</li>
-        <li id=search6 class="button is-primary m-1">city6</li>
-        <li id=search7 class="button is-primary m-1">city7</li>
-        <li id=search8 class="button is-primary m-1">city8</li>
+        <li id=search1 class="button is-primary m-1"></li>
+        <li id=search2 class="button is-primary m-1"></li>
+        <li id=search3 class="button is-primary m-1"></li>
+        <li id=search4 class="button is-primary m-1"></li>
+        <li id=search5 class="button is-primary m-1"></li>
+        <li id=search6 class="button is-primary m-1"></li>
+        <li id=search7 class="button is-primary m-1"></li>
+        <li id=search8 class="button is-primary m-1"></li>
     </ul>
 <!--Section for current forecast--> 
-<section id =currentCity class= "column is-size-3 m-4">city? <span id="currentDay">m/dd/yyy</span>
-    <img id="weatherIcon" class="image is-16x16"></img>
+<section id =currentCity class= "column is-size-3 m-4"> <span id="currentDay">m/dd/yyy</span>
+    <img id="weatherIcon" class="image is-16x16" src=""></img>
     <li id=currentTemp>Temp</li>
     <li id=currentWind>Wind</li>
     <li id=currentHumidity>Humidity</li>
@@ -51,12 +51,12 @@
 <!--Cards with future forecast-->
 <div id="cityRow" class="m-1">
     <div id="cityCards" class="columns is-centered">
-        <div class="column card is-one-fifth m-3">
+        <div id="card1" class="column card is-one-fifth m-3">
             <div class="card-content">
                 <div class="media">
                     <div class="media-content">
-                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
-                        <img id="weatherIcon" class="image is-16x16"></img>
+                        <p id="futureDate1" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon1" class="image is-16x16" src=""></img>
                     </div>
                 </div>
                 <p class="title is-5">Temp:<span id="temp1" class="subtitle is-6 ml-2">whatever</span></p>
@@ -64,25 +64,25 @@
                 <p class="title is-5">Humidity:<span id="humidity1" class="subtitle is-6 ml-2">whatever</span></p>
             </div>
         </div>
-        <div class="column card is-one-fifth m-3">
+        <div id="card2" class="column card is-one-fifth m-3">
             <div class="card-content">
                 <div class="media">
                     <div class="media-content">
-                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
-                        <img id="weatherIcon" class="image is-16x16"></img>
+                        <p id="futureDate2" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon2" class="image is-16x16" src=""></img>
                     </div>
                 </div>
                 <p class="title is-5">Temp:<span id="temp2" class="subtitle is-6 ml-2">whatever</span></p>
                 <p class="title is-5">Wind:<span id="wind2" class="subtitle is-6 ml-2">whatever</span></p>
-                <p class="title is-5">Humidity:<span id="humidity3" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Humidity:<span id="humidity2" class="subtitle is-6 ml-2">whatever</span></p>
             </div>
         </div>
-        <div class="column card is-one-fifth m-3">
+        <div id="card3" class="column card is-one-fifth m-3">
             <div class="card-content">
                 <div class="media">
                     <div class="media-content">
-                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
-                        <img id="weatherIcon" class="image is-16x16"></img>
+                        <p id="futureDate3" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon3" class="image is-16x16" src=""></img>
                     </div>
                 </div>
                 <p class="title is-5">Temp:<span id="temp3" class="subtitle is-6 ml-2">whatever</span></p>
@@ -90,12 +90,12 @@
                 <p class="title is-5">Humidity:<span id="humidity3" class="subtitle is-6 ml-2">whatever</span></p>
             </div>
         </div>
-        <div class="column card is-one-fifth m-3">
+        <div id="card4" class="column card is-one-fifth m-3">
             <div class="card-content">
                 <div class="media">
                     <div class="media-content">
-                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
-                        <img id="weatherIcon" class="image is-16x16"></img>
+                        <p id="futureDate4" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon4" class="image is-16x16" src=""></img>
                     </div>
                 </div>
                 <p class="title is-5">Temp:<span id="temp4" class="subtitle is-6 ml-2">whatever</span></p>
@@ -103,12 +103,12 @@
                 <p class="title is-5">Humidity:<span id="humidity4" class="subtitle is-6 ml-2">whatever</span></p>
             </div>
         </div>
-        <div class="column card is-one-fifth m-3">
+        <div id="card5" class="column card is-one-fifth m-3">
             <div class="card-content">
                 <div class="media">
                     <div class="media-content">
-                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
-                        <img id="weatherIcon" class="image is-16x16"></img>
+                        <p id="futureDate5" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon5" class="image is-16x16" src=""></img>
                     </div>
                 </div>
                 <p class="title is-5">Temp:<span id="temp5" class="subtitle is-6 ml-2">whatever</span></p>

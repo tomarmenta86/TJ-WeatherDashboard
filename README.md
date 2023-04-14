@@ -19,8 +19,8 @@ Create an application that will allow a user check the weather conditions and fo
 * Requirments are satisfied
 
 ## Screenshot of Deployed Weather App
-![Screenshot1](assets/...)
-![Screenshot2](assets/...)
+![Screenshot1](assets/screenshot1.png)
+![Screenshot2](assets/screenshot2.png)
 
 # Deployed Site
 

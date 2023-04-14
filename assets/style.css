@@ -1,1 +1,51 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+#cityList li{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 0%;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    background-color: rgb(172, 172, 172);
+}
+
+#currentCity{
+    list-style-type: none;
+    border-style: solid;
+    border-color: black;
+    margin-top: 0%;
+}
+
+#searches{
+    color: lightgrey;
+    width: 15vw;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+}
+
+#cityCards{
+    display: flex;
+    color: lightgrey;
+    font-size: 15px;
+    float: right;
+}
+
+#cityCards div{
+    background-color:rgb(43, 63, 83);
+    margin: 4%;
+}
+#cityCards p{
+    color: white;
+}
+#cityCards span{
+    color: white;
+}

@@ -5,10 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Report</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
+<!--Nav Header-->
+    <nav class= "navbar-menu is-active"><img src="assets/dashHeader.png" alt="WeatherDashboardHeader"><!--NAVIGATION WEATHER WIDGET--><!--<<div id="openweathermap-widget-3"></div>
+        <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 3,cityid: '5309842',appid: '3a46126d10c5be5fb84a6f2f079282f0',units: 'imperial',containerid: 'openweathermap-widget-3',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>--></nav>
+
+
+    <div class="columns">
+        <div class="column is-2">
+            <div class="field is-grouped-left">
+                <label id="cityInput" class="label is-large">Search for a City:</label>
+                <div class="control">
+                <input class="input is-medium" type="text" placeholder="Arizona"></div>
+                <p class="control">
+                    <a id= "searches" class="button is-info m-1">
+                    Search
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+<!--Recents Search List-->
+<div class="columns">
+    <ul class= "column is-2 mr-2" id="cityList">
+        <li id=search1 class="button is-primary m-1">city1</li>
+        <li id=search2 class="button is-primary m-1">city2</li>
+        <li id=search3 class="button is-primary m-1">city3</li>
+        <li id=search4 class="button is-primary m-1">city4</li>
+        <li id=search5 class="button is-primary m-1">city5</li>
+        <li id=search6 class="button is-primary m-1">city6</li>
+        <li id=search7 class="button is-primary m-1">city7</li>
+        <li id=search8 class="button is-primary m-1">city8</li>
+    </ul>
+<!--Section for current forecast--> 
+<section id =currentCity class= "column is-size-3 m-4">city? <span id="currentDay">m/dd/yyy</span>
+    <img id="weatherIcon" class="image is-16x16"></img>
+    <li id=currentTemp>Temp</li>
+    <li id=currentWind>Wind</li>
+    <li id=currentHumidity>Humidity</li>
+</section>
+</div>
+<!--Cards with future forecast-->
+<div id="cityRow" class="m-1">
+    <div id="cityCards" class="columns is-centered">
+        <div class="column card is-one-fifth m-3">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon" class="image is-16x16"></img>
+                    </div>
+                </div>
+                <p class="title is-5">Temp:<span id="temp1" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Wind:<span id="wind1" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Humidity:<span id="humidity1" class="subtitle is-6 ml-2">whatever</span></p>
+            </div>
+        </div>
+        <div class="column card is-one-fifth m-3">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon" class="image is-16x16"></img>
+                    </div>
+                </div>
+                <p class="title is-5">Temp:<span id="temp2" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Wind:<span id="wind2" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Humidity:<span id="humidity3" class="subtitle is-6 ml-2">whatever</span></p>
+            </div>
+        </div>
+        <div class="column card is-one-fifth m-3">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon" class="image is-16x16"></img>
+                    </div>
+                </div>
+                <p class="title is-5">Temp:<span id="temp3" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Wind:<span id="wind3" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Humidity:<span id="humidity3" class="subtitle is-6 ml-2">whatever</span></p>
+            </div>
+        </div>
+        <div class="column card is-one-fifth m-3">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon" class="image is-16x16"></img>
+                    </div>
+                </div>
+                <p class="title is-5">Temp:<span id="temp4" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Wind:<span id="wind4" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Humidity:<span id="humidity4" class="subtitle is-6 ml-2">whatever</span></p>
+            </div>
+        </div>
+        <div class="column card is-one-fifth m-3">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p id="futureDate" class="title is-5">MM/DD/YYYY</p>
+                        <img id="weatherIcon" class="image is-16x16"></img>
+                    </div>
+                </div>
+                <p class="title is-5">Temp:<span id="temp5" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Wind:<span id="wind5" class="subtitle is-6 ml-2">whatever</span></p>
+                <p class="title is-5">Humidity:<span id="humidity5" class="subtitle is-6 ml-2">whatever</span></p>
+            </div>
+        </div>
+    </div>
+
     
 </body>
 <script src="./assets/script.js"></script>
